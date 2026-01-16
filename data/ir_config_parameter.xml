@@ -1,0 +1,13 @@
+<odoo>
+    <data noupdate="1">
+        <record id="dbd_api_url_param" model="ir.config_parameter">
+            <field name="key">om_dbd_search.api_url</field>
+            <field name="value">https://opendata.dbd.go.th/th/api/3/action/datastore_search</field>
+        </record>
+
+        <record id="dbd_resource_id_param" model="ir.config_parameter">
+            <field name="key">om_dbd_search.resource_id</field>
+            <field name="value">f008dbbf-ddfa-4e3a-bac4-358a1a2b9853</field>
+        </record>
+    </data>
+</odoo>

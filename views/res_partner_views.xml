@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_inherit_dbd_search" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.dbd.search</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <button name="action_get_dbd_data" 
+                        type="object" 
+                        string="ดึงข้อมูล DBD" 
+                        class="btn-primary" 
+                        icon="fa-cloud-download"/>
+            </xpath>
+            <xpath expr="//field[@name='category_id']" position="after">
+                <field name="business_type_name"/>
+                <field name="registration_date"/>
+                <field name="objective"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
