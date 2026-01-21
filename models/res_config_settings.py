@@ -14,6 +14,6 @@ class ResConfigSettings(models.TransientModel):
         config_parameter='om_dbd_search.resource_id'
     )
     dbd_api_token = fields.Char(
-        string="API Key (ถ้ามี)", 
+        string="API Key (Token)", 
         config_parameter='om_dbd_search.api_token'
     )
